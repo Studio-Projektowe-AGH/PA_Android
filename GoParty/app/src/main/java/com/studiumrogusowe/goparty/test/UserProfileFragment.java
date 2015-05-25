@@ -62,6 +62,8 @@ public class UserProfileFragment extends Fragment {
             @Override
             public void success(ProfileResponseObject profileResponseObject, Response response) {
 
+
+                // setting name fields etc
                 name.setText(profileResponseObject.getFirst_name()+" "+profileResponseObject.getLast_name());
 
                 ArrayAdapter<String> bandsAdapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, profileResponseObject.getFavourite_bands());
