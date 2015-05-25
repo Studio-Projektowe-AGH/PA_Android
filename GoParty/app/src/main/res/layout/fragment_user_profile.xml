@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/goparty_background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/profil_uzytkownika"
+        android:id="@+id/textView3"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/userProfileAvatar"
+        android:src="@drawable/avatar"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Name"
+        android:id="@+id/userProfileName"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Favourite Genres:"
+        android:id="@+id/textView4"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:id="@+id/userProfileFavGenresList"
+        android:choiceMode="none" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Favourite Bands:"
+        android:id="@+id/textView5"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:id="@+id/userProfileFavBandsList"
+        android:choiceMode="none" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit profile"
+        android:id="@+id/button"
+        android:background="@drawable/login_button"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center" />
+
+</LinearLayout>

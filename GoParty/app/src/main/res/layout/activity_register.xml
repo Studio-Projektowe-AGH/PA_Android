@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/goparty_background"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="17dp"
+    android:paddingRight="17dp">
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_form_bg"
+        android:hint="Login"
+        android:inputType="text"
+        android:padding="10dp"
+        android:text="jak4isem3@gmail.com" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_form_bg"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:text="12456a" />
+
+    <EditText
+        android:id="@+id/password_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_form_bg"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:text="12456a" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_btn_height"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_button"
+        android:text="@string/action_sign_up" />
+</LinearLayout>

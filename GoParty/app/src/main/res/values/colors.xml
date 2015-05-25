@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="button_default">#611d2c</color>
+    <color name="background_primary">#282828</color>
+    <color name="fb_blue">#3b5998</color>
+    <color name="fb_blue_pressed">#8b9dc3</color>
+</resources>
