@@ -1,6 +1,7 @@
 package com.studiumrogusowe.goparty.test;
 
 import android.app.Fragment;
+import android.app.FragmentManager;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
@@ -12,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -38,6 +40,7 @@ public class UserProfileFragment extends Fragment {
     TextView name;
     ListView favGenres, favBands;
     ImageView avatar;
+    Button editProfile;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,6 +56,7 @@ public class UserProfileFragment extends Fragment {
         favBands = (ListView) view.findViewById(R.id.userProfileFavBandsList);
         favGenres = (ListView) view.findViewById(R.id.userProfileFavGenresList);
         avatar = (ImageView) view.findViewById(R.id.userProfileAvatar);
+        editProfile = (Button) view.findViewById(R.id.userProfileEdit);
 
         SharedPreferences sp = this.getActivity().getSharedPreferences("com.studiumrogusowe.goparty", Context.MODE_PRIVATE);
         String token = sp.getString("token","Bearer 0");
@@ -81,6 +85,18 @@ public class UserProfileFragment extends Fragment {
             }
         });
 
+
+
+        editProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Fragment fragment = new EditProfileFragment();
+                FragmentManager fragmentManager = getFragmentManager();
+                fragmentManager.beginTransaction()
+                        .replace(R.id.content_frame, fragment).commit();
+            }
+        });
 
                 // Inflate the layout for this fragment
         return view;

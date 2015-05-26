@@ -67,7 +67,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Edit profile"
-        android:id="@+id/button"
+        android:id="@+id/userProfileEdit"
         android:background="@drawable/login_button"
         android:layout_marginTop="10dp"
         android:layout_gravity="center" />
